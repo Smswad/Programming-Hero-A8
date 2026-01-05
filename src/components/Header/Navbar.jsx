@@ -1,19 +1,23 @@
 import React from 'react';
 import logo from "../../assets/assets/logo.png"
 import "../../App.css"
+import { SiGithub } from 'react-icons/si';
+import { Link } from 'react-router';
+
+
 const Navbar = () => {
     const links = <>
         <ul className='flex space-x-8 inter-normal font-semibold text-[1rem]'>
-            <li>Home</li>
-            <li>Apps</li>
-            <li>Installation</li>
+            <li><Link className='hover-gradient' href="">Home</Link></li>
+            <li><Link className='hover-gradient' href="">Apps</Link></li>
+            <li><Link className='hover-gradient' href="">Installation</Link></li>
         </ul>
     </>
     return (
         <div>
 
             {/* <h1>This is Header Section</h1> */}
-            <div className="navbar bg-base-100 shadow-sm mr-2 inter-normal">
+            <div className="navbar bg-base-100  mr-2 inter-normal">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -27,20 +31,23 @@ const Navbar = () => {
                         </ul>
                     </div>
                     {/* Hero logo & Name */}
-                    <a className="flex items-center text-xl">
+                    <Link className="flex items-center text-xl">
                         <img className="w-10 h-10 ml-20 mr-1 " src={logo} alt="hero.logo" />
                         <span className="font-bold text-[1rem] bg-[linear-gradient(125deg,#632EE3_0%,#9F62F2_100%)] bg-clip-text text-transparent"
                         >HERO.IO</span>
-                    </a>
+                    </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         {links}
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    
-                    <a className="btn mr-20">Button</a>
+                <div className="navbar-end ">
+                    {/* Contribute Button */}
+                    <a className="btn w-36.25 h-11.25 mr-20 bg-[linear-gradient(125deg,#632EE3_0%,#9F62F2_100%)] text-white px-6 py-2 rounded-lg">
+                        <span className='mr-px'><SiGithub /></span>
+                        <span className='font-semibold text-[1rem]'>Contribute</span>
+                    </a>
                 </div>
             </div>
         </div>

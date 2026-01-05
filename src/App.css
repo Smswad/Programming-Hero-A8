@@ -3,3 +3,60 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
+
+.hover-gradient {
+  position: relative;
+  color: #111; /* normal text color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Gradient text only on hover */
+.hover-gradient:hover {
+  background-image: linear-gradient(125deg, #632EE3 0%, #9F62F2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Underline using pseudo-element, gradient always on hover */
+.hover-gradient::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* adjust distance */
+  width: 0;
+  height: 2px; /* underline thickness */
+  background: linear-gradient(125deg, #632EE3 0%, #9F62F2 100%);
+  transition: width 0.3s ease;
+}
+
+.hover-gradient:hover::after {
+  width: 100%;
+}
+
+/* Common styles for social icons */
+.social-icon {
+  transition: all 0.3s ease;
+  color: white; /* default icon color */
+  display: inline-block;
+}
+
+/* Twitter light-blue glow on hover */
+.social-icon.twitter:hover {
+  color: #1DA1F2;
+  text-shadow: 0 0 5px #1DA1F2, 0 0 10px #1DA1F2, 0 0 15px #1DA1F2;
+}
+
+
+/* YouTube red glow on hover */
+.social-icon.youtube:hover {
+  color: #FF0000; /* YouTube red */
+  text-shadow: 0 0 5px #FF0000, 0 0 10px #FF0000, 0 0 15px #FF0000;
+}
+
+/* Facebook blue glow on hover */
+.social-icon.facebook:hover {
+  color: #1877F2; /* Facebook blue */
+  text-shadow: 0 0 5px #1877F2, 0 0 10px #1877F2, 0 0 15px #1877F2;
+}
