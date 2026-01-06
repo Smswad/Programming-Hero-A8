@@ -60,3 +60,74 @@
   color: #1877F2; /* Facebook blue */
   text-shadow: 0 0 5px #1877F2, 0 0 10px #1877F2, 0 0 15px #1877F2;
 }
+
+/* Base store button */
+.store-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #ffffff;
+  color: #111;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover lift */
+.store-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Icon base */
+.store-icon {
+  font-size: 1.35rem;
+  color: #111;
+  transition: all 0.3s ease;
+}
+
+/* Google Play hover */
+.store-btn.google:hover {
+  border-color: #34A853;
+}
+
+.store-btn.google:hover .store-icon {
+  color: #34A853;
+  text-shadow:
+    0 0 6px #34A853,
+    0 0 14px #34A853;
+}
+
+/* App Store hover */
+.store-btn.apple:hover {
+  border-color: #0A84FF;
+}
+
+.store-btn.apple:hover .store-icon {
+  color: #0A84FF;
+  text-shadow:
+    0 0 6px #0A84FF,
+    0 0 14px #0A84FF;
+}
+
+/* Glow ring */
+.store-btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.store-btn.google:hover::after {
+  box-shadow: 0 0 25px #34A85355;
+  opacity: 1;
+}
+
+.store-btn.apple:hover::after {
+  box-shadow: 0 0 25px #0A84FF55;
+  opacity: 1;
+}
+
