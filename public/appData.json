@@ -1,0 +1,662 @@
+[
+    {
+        "image": "/images/forest.png",
+        "title": "Forest: Focus for Productivity",
+        "companyName": "Seekrtech",
+        "id": 1,
+        "description": "Stay focused and boost productivity by planting virtual trees while working.",
+        "size": 45,
+        "reviews": 128450,
+        "ratingAvg": 4.7,
+        "downloads": 9000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 1200
+            },
+            {
+                "name": "2 star",
+                "count": 2100
+            },
+            {
+                "name": "3 star",
+                "count": 9500
+            },
+            {
+                "name": "4 star",
+                "count": 40200
+            },
+            {
+                "name": "5 star",
+                "count": 75450
+            }
+        ]
+    },
+    {
+        "image": "/images/notion.png",
+        "title": "Notion",
+        "companyName": "Notion Labs",
+        "id": 2,
+        "description": "All-in-one workspace for notes, tasks, and collaboration.",
+        "size": 78,
+        "reviews": 214560,
+        "ratingAvg": 4.6,
+        "downloads": 15000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 3200
+            },
+            {
+                "name": "2 star",
+                "count": 4500
+            },
+            {
+                "name": "3 star",
+                "count": 13200
+            },
+            {
+                "name": "4 star",
+                "count": 68400
+            },
+            {
+                "name": "5 star",
+                "count": 125260
+            }
+        ]
+    },
+    {
+        "image": "/images/spotify.png",
+        "title": "Spotify",
+        "companyName": "Spotify AB",
+        "id": 3,
+        "description": "Stream music, podcasts, and playlists from millions of creators.",
+        "size": 92,
+        "reviews": 845000,
+        "ratingAvg": 4.5,
+        "downloads": 1000000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 52000
+            },
+            {
+                "name": "2 star",
+                "count": 64000
+            },
+            {
+                "name": "3 star",
+                "count": 180000
+            },
+            {
+                "name": "4 star",
+                "count": 290000
+            },
+            {
+                "name": "5 star",
+                "count": 259000
+            }
+        ]
+    },
+    {
+        "image": "/images/duolingo.png",
+        "title": "Duolingo",
+        "companyName": "Duolingo Inc.",
+        "id": 4,
+        "description": "Learn languages with fun, bite-sized lessons.",
+        "size": 67,
+        "reviews": 510340,
+        "ratingAvg": 4.8,
+        "downloads": 500000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 8400
+            },
+            {
+                "name": "2 star",
+                "count": 12500
+            },
+            {
+                "name": "3 star",
+                "count": 26400
+            },
+            {
+                "name": "4 star",
+                "count": 134200
+            },
+            {
+                "name": "5 star",
+                "count": 328840
+            }
+        ]
+    },
+    {
+        "image": "/images/zoom.png",
+        "title": "Zoom",
+        "companyName": "Zoom Video Communications",
+        "id": 5,
+        "description": "Video meetings, webinars, and online collaboration.",
+        "size": 110,
+        "reviews": 390120,
+        "ratingAvg": 4.4,
+        "downloads": 300000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 22000
+            },
+            {
+                "name": "2 star",
+                "count": 31400
+            },
+            {
+                "name": "3 star",
+                "count": 72500
+            },
+            {
+                "name": "4 star",
+                "count": 136200
+            },
+            {
+                "name": "5 star",
+                "count": 128020
+            }
+        ]
+    },
+    {
+        "image": "/images/whatsapp.png",
+        "title": "WhatsApp",
+        "companyName": "Meta Platforms",
+        "id": 6,
+        "description": "Simple, secure messaging and calling for free.",
+        "size": 55,
+        "reviews": 920000,
+        "ratingAvg": 4.3,
+        "downloads": 2000000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 68000
+            },
+            {
+                "name": "2 star",
+                "count": 92000
+            },
+            {
+                "name": "3 star",
+                "count": 210000
+            },
+            {
+                "name": "4 star",
+                "count": 320000
+            },
+            {
+                "name": "5 star",
+                "count": 230000
+            }
+        ]
+    },
+    {
+        "image": "/images/canva.png",
+        "title": "Canva",
+        "companyName": "Canva Pty Ltd",
+        "id": 7,
+        "description": "Design presentations, posters, and social media graphics easily.",
+        "size": 88,
+        "reviews": 310450,
+        "ratingAvg": 4.7,
+        "downloads": 100000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 5200
+            },
+            {
+                "name": "2 star",
+                "count": 8400
+            },
+            {
+                "name": "3 star",
+                "count": 19800
+            },
+            {
+                "name": "4 star",
+                "count": 102000
+            },
+            {
+                "name": "5 star",
+                "count": 174050
+            }
+        ]
+    },
+    {
+        "image": "/images/telegram.png",
+        "title": "Telegram",
+        "companyName": "Telegram FZ-LLC",
+        "id": 8,
+        "description": "Fast, secure messaging with cloud-based chats.",
+        "size": 60,
+        "reviews": 610230,
+        "ratingAvg": 4.6,
+        "downloads": 800000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 14000
+            },
+            {
+                "name": "2 star",
+                "count": 22000
+            },
+            {
+                "name": "3 star",
+                "count": 68000
+            },
+            {
+                "name": "4 star",
+                "count": 210000
+            },
+            {
+                "name": "5 star",
+                "count": 296230
+            }
+        ]
+    },
+    {
+        "image": "/images/trello.png",
+        "title": "Trello",
+        "companyName": "Atlassian",
+        "id": 9,
+        "description": "Organize tasks and projects using boards and cards.",
+        "size": 48,
+        "reviews": 145600,
+        "ratingAvg": 4.5,
+        "downloads": 50000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 3200
+            },
+            {
+                "name": "2 star",
+                "count": 6100
+            },
+            {
+                "name": "3 star",
+                "count": 18500
+            },
+            {
+                "name": "4 star",
+                "count": 64200
+            },
+            {
+                "name": "5 star",
+                "count": 53600
+            }
+        ]
+    },
+    {
+        "image": "/images/github.png",
+        "title": "GitHub",
+        "companyName": "GitHub Inc.",
+        "id": 10,
+        "description": "Host, review, and manage code repositories.",
+        "size": 75,
+        "reviews": 204300,
+        "ratingAvg": 4.6,
+        "downloads": 100000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 4100
+            },
+            {
+                "name": "2 star",
+                "count": 7200
+            },
+            {
+                "name": "3 star",
+                "count": 19600
+            },
+            {
+                "name": "4 star",
+                "count": 82300
+            },
+            {
+                "name": "5 star",
+                "count": 91200
+            }
+        ]
+    },
+    {
+        "image": "/images/slack.png",
+        "title": "Slack",
+        "companyName": "Salesforce",
+        "id": 11,
+        "description": "Team communication and collaboration platform.",
+        "size": 98,
+        "reviews": 180540,
+        "ratingAvg": 4.4,
+        "downloads": 70000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 6200
+            },
+            {
+                "name": "2 star",
+                "count": 10400
+            },
+            {
+                "name": "3 star",
+                "count": 29800
+            },
+            {
+                "name": "4 star",
+                "count": 73400
+            },
+            {
+                "name": "5 star",
+                "count": 60840
+            }
+        ]
+    },
+    {
+        "image": "/images/google-drive.png",
+        "title": "Google Drive",
+        "companyName": "Google LLC",
+        "id": 12,
+        "description": "Store, share, and access files securely from anywhere.",
+        "size": 52,
+        "reviews": 650780,
+        "ratingAvg": 4.5,
+        "downloads": 1000000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 34000
+            },
+            {
+                "name": "2 star",
+                "count": 51000
+            },
+            {
+                "name": "3 star",
+                "count": 145000
+            },
+            {
+                "name": "4 star",
+                "count": 245000
+            },
+            {
+                "name": "5 star",
+                "count": 175780
+            }
+        ]
+    },
+    {
+        "image": "/images/evernote.png",
+        "title": "Evernote",
+        "companyName": "Evernote Corp",
+        "id": 13,
+        "description": "Take notes, organize ideas, and capture inspiration.",
+        "size": 66,
+        "reviews": 175200,
+        "ratingAvg": 4.2,
+        "downloads": 50000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 8200
+            },
+            {
+                "name": "2 star",
+                "count": 13400
+            },
+            {
+                "name": "3 star",
+                "count": 35800
+            },
+            {
+                "name": "4 star",
+                "count": 67200
+            },
+            {
+                "name": "5 star",
+                "count": 50700
+            }
+        ]
+    },
+    {
+        "image": "/images/instagram.png",
+        "title": "Instagram",
+        "companyName": "Meta Platforms",
+        "id": 14,
+        "description": "Share photos, videos, and stories with friends.",
+        "size": 105,
+        "reviews": 1200000,
+        "ratingAvg": 4.4,
+        "downloads": 2000000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 98000
+            },
+            {
+                "name": "2 star",
+                "count": 124000
+            },
+            {
+                "name": "3 star",
+                "count": 310000
+            },
+            {
+                "name": "4 star",
+                "count": 420000
+            },
+            {
+                "name": "5 star",
+                "count": 248000
+            }
+        ]
+    },
+    {
+        "image": "/images/dropbox.png",
+        "title": "Dropbox",
+        "companyName": "Dropbox Inc.",
+        "id": 15,
+        "description": "Secure cloud storage and file sharing.",
+        "size": 70,
+        "reviews": 245600,
+        "ratingAvg": 4.3,
+        "downloads": 500000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 12500
+            },
+            {
+                "name": "2 star",
+                "count": 19800
+            },
+            {
+                "name": "3 star",
+                "count": 48600
+            },
+            {
+                "name": "4 star",
+                "count": 88400
+            },
+            {
+                "name": "5 star",
+                "count": 76300
+            }
+        ]
+    },
+    {
+        "image": "/images/airbnb.png",
+        "title": "Airbnb",
+        "companyName": "Airbnb Inc.",
+        "id": 16,
+        "description": "Book unique homes and experiences worldwide.",
+        "size": 115,
+        "reviews": 360000,
+        "ratingAvg": 4.6,
+        "downloads": 300000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 8200
+            },
+            {
+                "name": "2 star",
+                "count": 13400
+            },
+            {
+                "name": "3 star",
+                "count": 38600
+            },
+            {
+                "name": "4 star",
+                "count": 138000
+            },
+            {
+                "name": "5 star",
+                "count": 161800
+            }
+        ]
+    },
+    {
+        "image": "/images/uber.png",
+        "title": "Uber",
+        "companyName": "Uber Technologies",
+        "id": 17,
+        "description": "Request rides, order food, and travel easily.",
+        "size": 112,
+        "reviews": 420500,
+        "ratingAvg": 4.2,
+        "downloads": 500000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 22400
+            },
+            {
+                "name": "2 star",
+                "count": 34800
+            },
+            {
+                "name": "3 star",
+                "count": 89600
+            },
+            {
+                "name": "4 star",
+                "count": 148000
+            },
+            {
+                "name": "5 star",
+                "count": 125700
+            }
+        ]
+    },
+    {
+        "image": "/images/shazam.png",
+        "title": "Shazam",
+        "companyName": "Apple Inc.",
+        "id": 18,
+        "description": "Identify songs and discover new music instantly.",
+        "size": 48,
+        "reviews": 298400,
+        "ratingAvg": 4.7,
+        "downloads": 100000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 4200
+            },
+            {
+                "name": "2 star",
+                "count": 6800
+            },
+            {
+                "name": "3 star",
+                "count": 15200
+            },
+            {
+                "name": "4 star",
+                "count": 92000
+            },
+            {
+                "name": "5 star",
+                "count": 180200
+            }
+        ]
+    },
+    {
+        "image": "/images/discord.png",
+        "title": "Discord",
+        "companyName": "Discord Inc.",
+        "id": 19,
+        "description": "Chat, voice, and video for communities and gamers.",
+        "size": 90,
+        "reviews": 540300,
+        "ratingAvg": 4.6,
+        "downloads": 300000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 14800
+            },
+            {
+                "name": "2 star",
+                "count": 22400
+            },
+            {
+                "name": "3 star",
+                "count": 68400
+            },
+            {
+                "name": "4 star",
+                "count": 184000
+            },
+            {
+                "name": "5 star",
+                "count": 250700
+            }
+        ]
+    },
+    {
+        "image": "/images/netflix.png",
+        "title": "Netflix",
+        "companyName": "Netflix Inc.",
+        "id": 20,
+        "description": "Watch movies, series, and documentaries anytime.",
+        "size": 125,
+        "reviews": 980000,
+        "ratingAvg": 4.4,
+        "downloads": 1000000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 62000
+            },
+            {
+                "name": "2 star",
+                "count": 84000
+            },
+            {
+                "name": "3 star",
+                "count": 210000
+            },
+            {
+                "name": "4 star",
+                "count": 350000
+            },
+            {
+                "name": "5 star",
+                "count": 274000
+            }
+        ]
+    }
+]
