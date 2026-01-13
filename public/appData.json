@@ -1,6 +1,6 @@
 [
     {
-        "image": "/images/forest.png",
+        "image": "/src/assets/assets/Apps Icon/forest-app.webp",
         "title": "Forest: Focus for Productivity",
         "companyName": "Seekrtech",
         "id": 1,
@@ -33,7 +33,7 @@
         ]
     },
     {
-        "image": "/images/notion.png",
+        "image": "/src/assets/assets/Apps Icon/notion-app.webp",
         "title": "Notion",
         "companyName": "Notion Labs",
         "id": 2,
@@ -66,7 +66,7 @@
         ]
     },
     {
-        "image": "/images/spotify.png",
+        "image": "/src/assets/assets/Apps Icon/spotify-app.webp",
         "title": "Spotify",
         "companyName": "Spotify AB",
         "id": 3,
@@ -99,7 +99,7 @@
         ]
     },
     {
-        "image": "/images/duolingo.png",
+        "image": "/src/assets/assets/Apps Icon/duolingo-app.webp",
         "title": "Duolingo",
         "companyName": "Duolingo Inc.",
         "id": 4,
@@ -132,7 +132,7 @@
         ]
     },
     {
-        "image": "/images/zoom.png",
+        "image": "/src/assets/assets/Apps Icon/zoom-app.webp",
         "title": "Zoom",
         "companyName": "Zoom Video Communications",
         "id": 5,
@@ -165,7 +165,7 @@
         ]
     },
     {
-        "image": "/images/whatsapp.png",
+        "image": "/src/assets/assets/Apps Icon/whatsapp-app.webp",
         "title": "WhatsApp",
         "companyName": "Meta Platforms",
         "id": 6,
@@ -198,7 +198,7 @@
         ]
     },
     {
-        "image": "/images/canva.png",
+        "image": "/src/assets/assets/Apps Icon/canva-app.webp",
         "title": "Canva",
         "companyName": "Canva Pty Ltd",
         "id": 7,
@@ -231,7 +231,7 @@
         ]
     },
     {
-        "image": "/images/telegram.png",
+        "image": "/src/assets/assets/Apps Icon/telegram-app.webp",
         "title": "Telegram",
         "companyName": "Telegram FZ-LLC",
         "id": 8,
@@ -264,7 +264,7 @@
         ]
     },
     {
-        "image": "/images/trello.png",
+        "image": "/src/assets/assets/Apps Icon/trello-app.webp",
         "title": "Trello",
         "companyName": "Atlassian",
         "id": 9,
@@ -297,7 +297,7 @@
         ]
     },
     {
-        "image": "/images/github.png",
+        "image": "/src/assets/assets/Apps Icon/github-app.webp",
         "title": "GitHub",
         "companyName": "GitHub Inc.",
         "id": 10,
@@ -330,7 +330,7 @@
         ]
     },
     {
-        "image": "/images/slack.png",
+        "image": "/src/assets/assets/Apps Icon/slack-app.webp",
         "title": "Slack",
         "companyName": "Salesforce",
         "id": 11,
@@ -363,7 +363,7 @@
         ]
     },
     {
-        "image": "/images/google-drive.png",
+        "image": "/src/assets/assets/Apps Icon/gdrive-app.webp",
         "title": "Google Drive",
         "companyName": "Google LLC",
         "id": 12,
@@ -396,7 +396,7 @@
         ]
     },
     {
-        "image": "/images/evernote.png",
+        "image": "/src/assets/assets/Apps Icon/evernote-app.webp",
         "title": "Evernote",
         "companyName": "Evernote Corp",
         "id": 13,
@@ -429,7 +429,7 @@
         ]
     },
     {
-        "image": "/images/instagram.png",
+        "image": "/src/assets/assets/Apps Icon/instagram-app.webp",
         "title": "Instagram",
         "companyName": "Meta Platforms",
         "id": 14,
@@ -462,7 +462,7 @@
         ]
     },
     {
-        "image": "/images/dropbox.png",
+        "image": "/src/assets/assets/Apps Icon/dropbox-app.webp",
         "title": "Dropbox",
         "companyName": "Dropbox Inc.",
         "id": 15,
@@ -495,7 +495,7 @@
         ]
     },
     {
-        "image": "/images/airbnb.png",
+        "image": "/src/assets/assets/Apps Icon/airbnb-app.webp",
         "title": "Airbnb",
         "companyName": "Airbnb Inc.",
         "id": 16,
@@ -528,7 +528,7 @@
         ]
     },
     {
-        "image": "/images/uber.png",
+        "image": "/src/assets/assets/Apps Icon/uber-app.webp",
         "title": "Uber",
         "companyName": "Uber Technologies",
         "id": 17,
@@ -561,7 +561,7 @@
         ]
     },
     {
-        "image": "/images/shazam.png",
+        "image": "/src/assets/assets/Apps Icon/shazam-app.webp",
         "title": "Shazam",
         "companyName": "Apple Inc.",
         "id": 18,
@@ -594,7 +594,7 @@
         ]
     },
     {
-        "image": "/images/discord.png",
+        "image": "/src/assets/assets/Apps Icon/discord-app.webp",
         "title": "Discord",
         "companyName": "Discord Inc.",
         "id": 19,
@@ -627,7 +627,7 @@
         ]
     },
     {
-        "image": "/images/netflix.png",
+        "image": "/src/assets/assets/Apps Icon/netflix-app.webp",
         "title": "Netflix",
         "companyName": "Netflix Inc.",
         "id": 20,
