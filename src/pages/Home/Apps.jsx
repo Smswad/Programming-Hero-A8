@@ -1,7 +1,5 @@
 import React, { Suspense } from 'react';
 import "../../App.css"
-// import downloadIcon from "../../assets/assets/icon-downloads.png"
-// import ratingsIcon from "../../assets/assets/icon-ratings.png"
 import App from '../App/App';
 
 const Apps = ({ data }) => {

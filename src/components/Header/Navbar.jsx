@@ -8,9 +8,9 @@ import { Link } from 'react-router';
 const Navbar = () => {
     const links = <>
         <ul className='flex space-x-8 inter-normal font-semibold text-[1rem]'>
-            <li><Link className='hover-gradient' href="">Home</Link></li>
-            <li><Link className='hover-gradient' href="">Apps</Link></li>
-            <li><Link className='hover-gradient' href="">Installation</Link></li>
+            <li><Link to='/' className='hover-gradient' href="">Home</Link></li>
+            <li><Link to='/apps' className='hover-gradient' href="">Apps</Link></li>
+            <li><Link to='/installation' className='hover-gradient' href="">Installation</Link></li>
         </ul>
     </>
     return (
@@ -44,10 +44,10 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end ">
                     {/* Contribute Button */}
-                    <a className="btn w-36.25 h-11.25 mr-20 bg-[linear-gradient(125deg,#632EE3_0%,#9F62F2_100%)] text-white px-6 py-2 rounded-lg">
+                    <Link to='https://github.com/Smswad/Programming-Hero-A8' className="btn w-36.25 h-11.25 mr-20 bg-[linear-gradient(125deg,#632EE3_0%,#9F62F2_100%)] text-white px-6 py-2 rounded-lg">
                         <span className='mr-px'><SiGithub /></span>
                         <span className='font-semibold text-[1rem]'>Contribute</span>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

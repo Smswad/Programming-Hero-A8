@@ -2,8 +2,7 @@ import React from 'react';
 import { FaAppStoreIos, FaGooglePlay } from 'react-icons/fa';
 import "../../App.css"
 import hero from "../../assets/assets/hero.png"
-// import downloadIcon from "../../assets/assets/icon-downloads.png"
-// import ratingsIcon from "../../assets/assets/icon-ratings.png"
+import { Link } from 'react-router';
 
 const Banner = () => {
     return (
@@ -19,14 +18,14 @@ const Banner = () => {
                 <br />Our goal is to turn your ideas into digital experiences that truly make an impact.
             </p>
             <div className='font-semibold text-[1.25rem] flex justify-center mt-10'>
-                <button className="btn btn-outline btn-wide store-btn google mr-4">
+                <Link to='https://play.google.com/store/games?hl=en' className="btn btn-outline btn-wide store-btn google mr-4">
                     <FaGooglePlay className='store-icon' />
                     Google Play
-                </button>
-                <button className="btn btn-outline btn-wide store-btn apple">
+                </Link>
+                <Link to='https://www.apple.com/app-store/' className="btn btn-outline btn-wide store-btn apple">
                     <FaAppStoreIos className='store-icon' />
                     App Store
-                </button>
+                </Link>
             </div>
 
             <img className='mt-10' src={hero} alt="hero.png" />
