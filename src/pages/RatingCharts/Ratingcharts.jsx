@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
-import { Bar, BarChart, CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Ratingcharts = () => {
 
@@ -9,12 +9,8 @@ const Ratingcharts = () => {
     const data = useLoaderData();
     const singleApp = data.find(app => app.id === AppId);
     // console.log(singleApp);
-    const { ratingAvg, ratings } = singleApp;
-
+    const { ratings } = singleApp;
     const reversedRatings = [...ratings].reverse();
-
-
-
 
     return (
         <div>
