@@ -6,6 +6,8 @@ import Home from '../pages/Home/Home';
 import About from '../pages/About/About';
 import AppDetails from '../pages/AppDetails/AppDetails';
 import Ratingcharts from '../pages/RatingCharts/Ratingcharts';
+import InstalledApplist from '../pages/InstalledApp/InstalledApplist';
+import Installation from '../pages/Installation/Installation';
 
 
 export const router = createBrowserRouter([
@@ -33,6 +35,11 @@ export const router = createBrowserRouter([
                 path: '/ratingCharts/:id',
                 loader: () => fetch('/appData.json'),
                 Component: Ratingcharts
+            },
+            {
+                path: '/installation',
+                loader: () => fetch('/appData.json'),
+                Component: Installation
             }
         ]
     },

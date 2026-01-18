@@ -3,6 +3,8 @@ import logo from "../../assets/assets/logo.png"
 import "../../App.css"
 import { SiGithub } from 'react-icons/si';
 import { Link } from 'react-router';
+import { House, LayoutGrid } from 'lucide-react';
+import { GrInstallOption } from 'react-icons/gr';
 
 
 const Navbar = () => {

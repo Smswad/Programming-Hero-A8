@@ -6,7 +6,7 @@ import { Link } from 'react-router';
 
 const Banner = () => {
     return (
-        <div>
+        <div className=''>
 
             <h1 className='mt-20 font-bold text-[4.5rem]'>We Build <br />
                 <span

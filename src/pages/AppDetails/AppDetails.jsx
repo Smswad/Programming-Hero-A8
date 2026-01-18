@@ -6,6 +6,7 @@ import reviewsIcon from "../../assets/assets/icon-review.png"
 import { useLoaderData, useParams } from 'react-router';
 import Ratingcharts from '../RatingCharts/Ratingcharts';
 import ScrollToTop from '../ScrollToTop/ScrollToTop';
+import { addInstalledApp } from '../../Utility/addToDB';
 // import { router } from '../../Routes/routes';
 
 const AppDetails = () => {
@@ -14,23 +15,35 @@ const AppDetails = () => {
     const AppId = parseInt(id);
     const data = useLoaderData();
     const singleApp = data.find(app => app.id === AppId);
-    // console.log(singleApp);
     const { image, title, downloads, ratingAvg, reviews, companyName, size, description } = singleApp;
 
+    // Downloads Conversion
     // 1000000 M  ; 1000000000 B
     let millionconvertorNumber = 1000000;
     let billionconvertorNumber = 1000000000;
     let convertDownload = 0;
     if (downloads >= 1000000 && downloads < 1000000000) {
         convertDownload = (downloads / millionconvertorNumber) + 'M';
-        // return (convertDownload + 'M');
     }
     else if (downloads >= 1000000000) {
         convertDownload = (downloads / billionconvertorNumber) + 'B';
-        // return (convertDownload + 'B');
     }
-
+    // Reviews Conversion 
     const convertReviews = (reviews / 1000).toFixed(1) + "K";
+
+    // 
+    const handleInstalledApp = id => {
+        // Store with id
+
+        // Where to store
+
+        // Array or Collection
+
+        // if app already installed then show an alert!
+
+        // if app is not installed then push the app in the installed collection
+        addInstalledApp(id);
+    }
 
 
     return (
@@ -76,11 +89,13 @@ const AppDetails = () => {
                                 {convertReviews}
                             </span>
                         </span>
-                        <button className="btn btn-success text-white font-semibold text-[1.25rem] mt-7.5 p-5">Install Now ({size} MB)</button>
+                        {/* Install Button */}
+                        <button onClick={() => handleInstalledApp(id)} className="btn btn-success text-white font-semibold text-[1.25rem] mt-7.5 p-5">Install Now ({size} MB)</button>
 
                     </section>
                 </section>
             </div>
+            {/* Divider */}
             <div className="flex w-full flex-col">
                 <div className="divider"></div>
             </div>

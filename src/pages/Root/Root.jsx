@@ -9,7 +9,9 @@ const Root = () => {
         <div>
             <Navbar></Navbar>
             <ScrollToTop></ScrollToTop>
-            <Outlet></Outlet>
+            <main className="">
+                <Outlet></Outlet>
+            </main>
             <Footer></Footer>
         </div>
     );

@@ -7,7 +7,7 @@ import { useLoaderData } from 'react-router';
 
 const Home = () => {
     const data = useLoaderData();
-    console.log(data);
+    // console.log(data);
     return (
         <div className='bg-[#f5f5f5] flex flex-col items-center text-center inter-normal'>
             <Banner></Banner>
