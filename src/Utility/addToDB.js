@@ -18,8 +18,20 @@ const addInstalledApp = (id) => {
         storedAppData.push(id);
         console.log(storedAppData);
         const data = JSON.stringify(storedAppData);
-        localStorage.setItem("installedList", data)
+        localStorage.setItem("installedList", data);
+        alert("The App in Installing!");
     }
 }
 
-export { addInstalledApp, getInstalledApp };
+const removeInstalledApp = (id) => {
+    const storedAppData = getInstalledApp();
+
+    const updatedApps = storedAppData.filter(appId => appId !== id);
+
+    localStorage.setItem("installedList", JSON.stringify(updatedApps));
+
+    alert("App Uninstalled!");
+};
+
+
+export { addInstalledApp, getInstalledApp, removeInstalledApp };

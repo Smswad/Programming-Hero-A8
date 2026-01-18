@@ -3,9 +3,16 @@ import "../../App.css"
 import downloadIcon from "../../assets/assets/icon-downloads.png"
 import ratingsIcon from "../../assets/assets/icon-ratings.png"
 import "../../App.css"
+import { removeInstalledApp } from '../../Utility/addToDB';
 
-const InstalledAppCard = ({ app }) => {
+const InstalledAppCard = ({ app, onRemove }) => {
     const { image, title, downloads, ratingAvg, size } = app;
+
+    const handleUninstall = () => {
+        removeInstalledApp(app.id);
+        onRemove(app.id); // update UI immediately
+    };
+    
 
     // Downloads Conversion
     // 1000000 M  ; 1000000000 B
@@ -50,7 +57,7 @@ const InstalledAppCard = ({ app }) => {
                     </div>
                 </div>
 
-                <button className="btn btn-sm bg-[#00D390] text-white font-semibold text-[1rem] w-25 h-10.75">
+                <button onClick={handleUninstall} className="btn btn-sm bg-[#00D390] text-white font-semibold text-[1rem] w-25 h-10.75">
                     Uninstall
                 </button>
             </div>

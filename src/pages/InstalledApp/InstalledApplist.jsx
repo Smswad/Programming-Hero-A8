@@ -33,6 +33,12 @@ const InstalledApplist = () => {
             console.log(sortedByHightToLow);
         }
     }
+    const handleRemove = (id) => {
+        const updatedList = installedApp.filter(app => app.id !== id);
+        setInstalledApp(updatedList);
+    };
+
+    
 
 
     return (
@@ -58,7 +64,7 @@ const InstalledApplist = () => {
                 </section>
                 {
                     installedApp.map(a => (
-                        <InstalledAppCard key={a.id} app={a}></InstalledAppCard>))
+                        <InstalledAppCard key={a.id} app={a} onRemove={handleRemove}></InstalledAppCard>))
                 }
 
             </div>

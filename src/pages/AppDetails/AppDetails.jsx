@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "../../App.css"
 import downloadIcon from "../../assets/assets/icon-downloads.png"
 import ratingsIcon from "../../assets/assets/icon-ratings.png"
@@ -6,7 +6,7 @@ import reviewsIcon from "../../assets/assets/icon-review.png"
 import { useLoaderData, useParams } from 'react-router';
 import Ratingcharts from '../RatingCharts/Ratingcharts';
 import ScrollToTop from '../ScrollToTop/ScrollToTop';
-import { addInstalledApp } from '../../Utility/addToDB';
+import { addInstalledApp, getInstalledApp } from '../../Utility/addToDB';
 // import { router } from '../../Routes/routes';
 
 const AppDetails = () => {
@@ -31,19 +31,25 @@ const AppDetails = () => {
     // Reviews Conversion 
     const convertReviews = (reviews / 1000).toFixed(1) + "K";
 
-    // 
     const handleInstalledApp = id => {
-        // Store with id
-
-        // Where to store
-
-        // Array or Collection
-
-        // if app already installed then show an alert!
-
-        // if app is not installed then push the app in the installed collection
         addInstalledApp(id);
     }
+
+    const [isInstalled, setIsInstalled] = useState(false);
+
+    useEffect(() => {
+        const installedApps = getInstalledApp();
+        if (installedApps.includes(AppId)) {
+            setIsInstalled(true);
+        }
+    }, [AppId]);
+
+    const handleInstall = () => {
+        addInstalledApp(AppId);
+        setIsInstalled(true);
+    };
+
+
 
 
     return (
@@ -90,7 +96,15 @@ const AppDetails = () => {
                             </span>
                         </span>
                         {/* Install Button */}
-                        <button onClick={() => handleInstalledApp(id)} className="btn btn-success text-white font-semibold text-[1.25rem] mt-7.5 p-5">Install Now ({size} MB)</button>
+                        <button
+                            onClick={handleInstall}
+                            disabled={isInstalled}
+                            className={`btn mt-7.5 p-5 text-white font-semibold text-[1.25rem]
+                                    ${isInstalled
+                                    ? 'bg-gray-400 cursor-not-allowed'
+                                    : 'btn-success'}`}>
+                            {isInstalled ? 'Installed' : `Install Now (${size} MB)`}
+                        </button>
 
                     </section>
                 </section>
