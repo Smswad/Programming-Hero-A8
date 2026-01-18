@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router';
-import { getInstalledApp } from '../../Utility/addToDB';
+import { getInstalledApp, removeInstalledApp } from '../../Utility/addToDB';
 import App from '../App/App';
 import InstalledAppCard from '../InstalledAppCard/InstalledAppCard';
 import { IoMdArrowDropdown } from 'react-icons/io';
@@ -34,11 +34,13 @@ const InstalledApplist = () => {
         }
     }
     const handleRemove = (id) => {
-        const updatedList = installedApp.filter(app => app.id !== id);
-        setInstalledApp(updatedList);
+        removeInstalledApp(id);          // ❗ remove from localStorage
+        setInstalledApp(prev =>
+            prev.filter(app => app.id !== id) // ❗ update UI
+        );
     };
 
-    
+
 
 
     return (

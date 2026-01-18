@@ -6,13 +6,13 @@ import "../../App.css"
 import { removeInstalledApp } from '../../Utility/addToDB';
 
 const InstalledAppCard = ({ app, onRemove }) => {
-    const { image, title, downloads, ratingAvg, size } = app;
+    const { image, title, downloads, ratingAvg, size, id } = app;
 
-    const handleUninstall = () => {
-        removeInstalledApp(app.id);
-        onRemove(app.id); // update UI immediately
-    };
-    
+    // const handleUninstall = (id) => {
+    //     removeInstalledApp(id);
+    //     setInstalledApp(prev => prev.filter(app => app.id !== id));
+    // };
+
 
     // Downloads Conversion
     // 1000000 M  ; 1000000000 B
@@ -57,7 +57,7 @@ const InstalledAppCard = ({ app, onRemove }) => {
                     </div>
                 </div>
 
-                <button onClick={handleUninstall} className="btn btn-sm bg-[#00D390] text-white font-semibold text-[1rem] w-25 h-10.75">
+                <button onClick={() => onRemove(id)} className="btn btn-sm bg-[#00D390] text-white font-semibold text-[1rem] w-25 h-10.75">
                     Uninstall
                 </button>
             </div>

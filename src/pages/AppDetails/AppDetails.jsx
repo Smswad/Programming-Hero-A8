@@ -31,17 +31,15 @@ const AppDetails = () => {
     // Reviews Conversion 
     const convertReviews = (reviews / 1000).toFixed(1) + "K";
 
-    const handleInstalledApp = id => {
-        addInstalledApp(id);
-    }
+    // const handleInstalledApp = id => {
+    //     addInstalledApp(id);
+    // }
 
     const [isInstalled, setIsInstalled] = useState(false);
 
     useEffect(() => {
-        const installedApps = getInstalledApp();
-        if (installedApps.includes(AppId)) {
-            setIsInstalled(true);
-        }
+        const installedApps = getInstalledApp().map(Number);
+        setIsInstalled(installedApps.includes(AppId));
     }, [AppId]);
 
     const handleInstall = () => {
