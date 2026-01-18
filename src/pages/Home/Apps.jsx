@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import "../../App.css"
 import App from '../App/App';
+import { Link } from 'react-router';
 
 const Apps = ({ data }) => {
 
@@ -20,10 +21,15 @@ const Apps = ({ data }) => {
                     }
                 </Suspense>
             </div>
-            <button className="mb-20 mt-10 font-semibold text-[1rem] btn btn-outline bg-[linear-gradient(125deg,#632EE3_0%,#9F62F2_100%)] text-white px-6 py-2 rounded-lg">Show All</button>
+            <button
+                className="mb-20 mt-10 font-semibold text-[1rem] btn btn-outline bg-[linear-gradient(125deg,#632EE3_0%,#9F62F2_100%)] text-white px-6 py-2 rounded-lg">
+                <Link to="/apps">
+                    Show All
+                </Link>
+            </button>
 
 
-        </div>
+        </div >
 
     );
 };
