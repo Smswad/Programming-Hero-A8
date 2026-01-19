@@ -2,7 +2,7 @@ import React from 'react';
 import logo from "../../assets/assets/logo.png"
 import "../../App.css"
 import { SiGithub } from 'react-icons/si';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import { House, LayoutGrid } from 'lucide-react';
 import { GrInstallOption } from 'react-icons/gr';
 
@@ -10,9 +10,15 @@ import { GrInstallOption } from 'react-icons/gr';
 const Navbar = () => {
     const links = <>
         <ul className='flex space-x-8 inter-normal font-semibold text-[1rem]'>
-            <li><Link to='/' className='hover-gradient' href="">Home</Link></li>
-            <li><Link to='/apps' className='hover-gradient' href="">Apps</Link></li>
-            <li><Link to='/installation' className='hover-gradient' href="">Installation</Link></li>
+            <li><NavLink to='/' className={({ isActive }) =>
+                isActive ? "hover-gradient active-gradient" : "hover-gradient"
+            } href="">Home</NavLink></li>
+            <li><NavLink to='/apps' className={({ isActive }) =>
+                isActive ? "hover-gradient active-gradient" : "hover-gradient"
+            } href="">Apps</NavLink></li>
+            <li><NavLink to='/installation' className={({ isActive }) =>
+                isActive ? "hover-gradient active-gradient" : "hover-gradient"
+            } href="">Installation</NavLink></li>
         </ul>
     </>
     return (

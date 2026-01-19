@@ -5,7 +5,9 @@ import App from '../App/App';
 const Allapps = () => {
     return (
         <div>
-           <Apps></Apps>
+           {/* <Apps></Apps> */}
+           <h1>Hi I am All Apps.</h1>
+           
         </div>
     );
 };
