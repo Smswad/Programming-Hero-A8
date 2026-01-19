@@ -21,8 +21,8 @@ const addInstalledApp = (id) => {
     //     console.log(storedAppData);
     //     const data = JSON.stringify(storedAppData);
     //     localStorage.setItem("installedList", data);
-    //     alert("The App in Installing!");
     // }
+        alert("The App in Installing!");
     localStorage.setItem("installedList", JSON.stringify([...storedAppData, numericId]));
 }
 // apps = storedAppData

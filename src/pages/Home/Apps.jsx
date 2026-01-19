@@ -17,7 +17,9 @@ const Apps = ({ data }) => {
             <div className='grid grid-cols-4 gap-4'>
                 <Suspense fallback={<span>Loading.......</span>}>
                     {
-                        data.map((singleApp) => <App key={singleApp.id} singleApp={singleApp}></App>)
+                        data.slice(0, 8).map(singleApp => (
+                            <App key={singleApp.id} singleApp={singleApp} />
+                        ))
                     }
                 </Suspense>
             </div>
