@@ -52,7 +52,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end ">
                     {/* Contribute Button */}
-                    <Link to='https://github.com/Smswad/Programming-Hero-A8' className="btn w-36.25 h-11.25 mr-20 bg-[linear-gradient(125deg,#632EE3_0%,#9F62F2_100%)] text-white px-6 py-2 rounded-lg">
+                    <Link to='https://github.com/Smswad' className="btn w-36.25 h-11.25 mr-20 bg-[linear-gradient(125deg,#632EE3_0%,#9F62F2_100%)] text-white px-6 py-2 rounded-lg">
                         <span className='mr-px'><SiGithub /></span>
                         <span className='font-semibold text-[1rem]'>Contribute</span>
                     </Link>
