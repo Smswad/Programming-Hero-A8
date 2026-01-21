@@ -8,13 +8,12 @@ const Apps = ({ data }) => {
 
     return (
         // {/* Apps */}
-        <div className='mt-20 '>
-
-            <h1 className='font-bold text-[3rem]'>Trending Apps</h1>
-            <h3 className='font-normal text-[1.25rem] text-[#627382] mt-4'>Explore All Trending Apps on the Market developed by us</h3>
+        <div className='mt-10 md:mt-20 px-4 w-full max-w-7xl mx-auto'>
+            <h1 className='font-bold text-3xl md:text-[3rem]'>Trending Apps</h1>
+            <h3 className='font-normal text-base md:text-[1.25rem] text-[#627382] mt-4'>Explore All Trending Apps on the Market developed by us</h3>
 
             {/* ALl CARDS */}
-            <div className='grid grid-cols-4 gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8'>
                 <Suspense fallback={<span>Loading.......</span>}>
                     {
                         data.slice(0, 8).map(singleApp => (

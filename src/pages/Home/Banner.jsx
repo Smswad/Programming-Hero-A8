@@ -8,17 +8,17 @@ const Banner = () => {
     return (
         <div className=''>
 
-            <h1 className='mt-20 font-bold text-[4.5rem]'>We Build <br />
+            <h1 className='mt-10 md:mt-20 font-bold text-4xl md:text-[4.5rem] leading-tight px-4'>We Build <br />
                 <span
                     className='bg-[linear-gradient(125deg,#632EE3_0%,#9F62F2_100%)] bg-clip-text text-transparent'>Productive
                 </span> Apps
             </h1>
-            <p className='font-normal text-[1.25rem] text-[#627382]'>
+            <p className='font-normal text-base md:text-[1.25rem] text-[#627382] mt-4 px-4 max-w-2xl mx-auto'>
                 At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.
-                <br />Our goal is to turn your ideas into digital experiences that truly make an impact.
+                <br className="hidden md:block" />Our goal is to turn your ideas into digital experiences that truly make an impact.
             </p>
-            <div className='font-semibold text-[1.25rem] flex justify-center mt-10'>
-                <Link to='https://play.google.com/store/games?hl=en' className="btn btn-outline btn-wide store-btn google mr-4">
+            <div className='font-semibold text-[1.25rem] flex flex-col md:flex-row justify-center items-center mt-8 md:mt-10 gap-4'>
+                <Link to='https://play.google.com/store/games?hl=en' className="btn btn-outline btn-wide store-btn google">
                     <FaGooglePlay className='store-icon' />
                     Google Play
                 </Link>

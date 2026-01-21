@@ -30,16 +30,16 @@ const InstalledAppCard = ({ app, onRemove }) => {
         <div className=''>
 
 
-            <div className="flex items-center justify-center gap-4 p-4 bg-[white] rounded-xl shadow-sm w-360 mx-auto">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 bg-[white] rounded-xl shadow-sm w-full max-w-[40rem] mx-auto mb-4">
                 <img
                     src={image}
                     alt={title}
                     className="w-14 h-14 rounded-xl"
                 />
 
-                <div className="flex-2">
+                <div className="flex-2 w-full text-center sm:text-left">
                     <h3 className="font-semibold text-lg">{title}</h3>
-                    <div className='flex justify-between max-w-48 font-medium'>
+                    <div className='flex justify-center sm:justify-start gap-4 max-w-full font-medium mt-1'>
                         <section className="text-[#00d390] flex items-center">
                             <img className='h-4 w-4' src={downloadIcon} alt="" />
                             <h1 className='ml-1'>
@@ -57,7 +57,7 @@ const InstalledAppCard = ({ app, onRemove }) => {
                     </div>
                 </div>
 
-                <button onClick={() => onRemove(id)} className="btn btn-sm bg-[#00D390] text-white font-semibold text-[1rem] w-25 h-10.75">
+                <button onClick={() => onRemove(id)} className="btn btn-sm bg-[#00D390] text-white font-semibold text-[1rem] w-full sm:w-25 h-10.75">
                     Uninstall
                 </button>
             </div>

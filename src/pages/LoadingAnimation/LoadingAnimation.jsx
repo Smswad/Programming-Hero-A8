@@ -5,10 +5,10 @@ import "../../App.css"
 const LoadingAnimation = () => {
     return (
         <div className="fixed inset-0 bg-white/90 flex items-center justify-center z-50">
-            <h1 className='inter-normal flex items-center text-[4rem] font-bold'>
+            <h1 className='inter-normal flex items-center text-4xl md:text-[4rem] font-bold'>
                 L
                 <img
-                    className='inline-block h-14 w-14 mx-1 animate-spin'
+                    className='inline-block h-10 w-10 md:h-14 md:w-14 mx-1 animate-spin'
                     src={logo}
                     alt="O"
                 />

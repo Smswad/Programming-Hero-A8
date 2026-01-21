@@ -28,11 +28,11 @@ const Navbar = () => {
             {/* 🔵 Loading Bar */}
             {isLoading && <LoadingAnimation></LoadingAnimation>}
             {/* <h1>This is Header Section</h1> */}
-            <div className="navbar bg-base-100  mr-2 inter-normal">
-                <div className="navbar-start">
+            <div className="navbar bg-base-100 inter-normal px-4 lg:px-0">
+                <div className="navbar-start w-full lg:w-1/2 justify-between lg:justify-start">
                     <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
+                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden p-0 pr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
                         <ul
@@ -42,20 +42,22 @@ const Navbar = () => {
                         </ul>
                     </div>
                     {/* Hero logo & Name */}
-                    <Link className="flex items-center text-xl">
-                        <img className="w-10 h-10 ml-20 mr-1 " src={logo} alt="hero.logo" />
+                    <Link className="flex items-center text-xl lg:ml-20">
+                        <img className="w-8 h-8 lg:w-10 lg:h-10 mr-1 " src={logo} alt="hero.logo" />
                         <span className="font-bold text-[1rem] bg-[linear-gradient(125deg,#632EE3_0%,#9F62F2_100%)] bg-clip-text text-transparent"
                         >HERO.IO</span>
                     </Link>
+                    {/* Placeholder to balance the flex container on mobile if needed, or remove verify behavior */}
+                     <div className='lg:hidden w-6'></div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         {links}
                     </ul>
                 </div>
-                <div className="navbar-end ">
+                <div className="navbar-end hidden lg:flex">
                     {/* Contribute Button */}
-                    <Link to='https://github.com/Smswad' className="btn w-36.25 h-11.25 mr-20 bg-[linear-gradient(125deg,#632EE3_0%,#9F62F2_100%)] text-white px-6 py-2 rounded-lg">
+                    <Link to='https://github.com/Smswad' className="btn w-36.25 h-11.25 lg:mr-20 bg-[linear-gradient(125deg,#632EE3_0%,#9F62F2_100%)] text-white px-6 py-2 rounded-lg">
                         <span className='mr-px'><SiGithub /></span>
                         <span className='font-semibold text-[1rem]'>Contribute</span>
                     </Link>

@@ -46,16 +46,16 @@ const AppDetails = () => {
 
 
     return (
-        <div className='ml-20 mr-20 inter-normal'>
-            <div className='flex'>
-                <section className='mr-10'>
-                    <img src={image} alt="" />
+        <div className='px-4 lg:px-20 inter-normal max-w-7xl mx-auto'>
+            <div className='flex flex-col lg:flex-row items-center lg:items-start'>
+                <section className='mb-8 lg:mb-0 lg:mr-10'>
+                    <img src={image} alt="" className="w-full max-w-[200px] lg:max-w-none mx-auto rounded-xl" />
 
                 </section>
 
-                <section className=''>
-                    <h1 className='font-bold text-[2rem]'>{title}</h1>
-                    <h3 className='text-[#627382] text-[1.25rem] font-normal'>Developed by
+                <section className='w-full'>
+                    <h1 className='font-bold text-3xl md:text-[2rem] text-center lg:text-left'>{title}</h1>
+                    <h3 className='text-[#627382] text-lg md:text-[1.25rem] font-normal text-center lg:text-left mt-2'>Developed by
                         <span className='font-semibold bg-[linear-gradient(125deg,#632EE3_0%,#9F62F2_100%)] bg-clip-text text-transparent'> {companyName}
                         </span>
                     </h3>
@@ -63,41 +63,43 @@ const AppDetails = () => {
                         <div className="divider"></div>
                     </div>
 
-                    <section className='grid grid-cols-3 text-[1rem]'>
+                    <section className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-0 text-[1rem] text-center lg:text-left'>
                         {/* Download Count */}
-                        <span className="">
+                        <span className="flex flex-col items-center lg:items-start">
                             <img className='' src={downloadIcon} alt="" />
                             <h1 className='text-[1rem] text-[#001931] font-normal mt-2'>Downloads</h1>
-                            <span className='font-extrabold text-[2.5rem]'>
+                            <span className='font-extrabold text-3xl md:text-[2.5rem]'>
                                 {convertDownload}
                             </span>
                         </span>
                         {/* Average Ratings */}
-                        <span className="">
+                        <span className="flex flex-col items-center lg:items-start">
                             <img className='' src={ratingsIcon} alt="" />
                             <h1 className='text-[1rem] text-[#001931] font-normal mt-2'>Average Ratings</h1>
-                            <span className='font-extrabold text-[2.5rem]'>
+                            <span className='font-extrabold text-3xl md:text-[2.5rem]'>
                                 {ratingAvg}
                             </span>
                         </span>
                         {/* Total Reviews */}
-                        <span className=''>
+                        <span className='flex flex-col items-center lg:items-start'>
                             <img className='' src={reviewsIcon} alt="" />
                             <h1 className='text-[1rem] text-[#001931] font-normal mt-2'>Total Reviews</h1>
-                            <span className='font-extrabold text-[2.5rem]'>
+                            <span className='font-extrabold text-3xl md:text-[2.5rem]'>
                                 {convertReviews}
                             </span>
                         </span>
                         {/* Install Button */}
-                        <button
-                            onClick={handleInstall}
-                            disabled={isInstalled}
-                            className={`btn mt-7.5 p-5 text-white font-semibold text-[1.25rem]
-                                    ${isInstalled
-                                    ? 'bg-gray-400 cursor-not-allowed'
-                                    : 'btn-success'}`}>
-                            {isInstalled ? 'Installed' : `Install Now (${size} MB)`}
-                        </button>
+                        <div className="md:col-span-3 lg:col-span-3 flex justify-center lg:justify-start">
+                            <button
+                                onClick={handleInstall}
+                                disabled={isInstalled}
+                                className={`btn mt-7.5 p-5 text-white font-semibold text-[1.25rem] w-full md:w-auto
+                                        ${isInstalled
+                                        ? 'bg-gray-400 cursor-not-allowed'
+                                        : 'btn-success'}`}>
+                                {isInstalled ? 'Installed' : `Install Now (${size} MB)`}
+                            </button>
+                        </div>
 
                     </section>
                 </section>

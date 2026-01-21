@@ -27,7 +27,7 @@ const App = ({ singleApp }) => {
 
         // {/* Card */}
         <Link to={`/appDetails/${id}`}>
-            <div className="card bg-base-100 shadow-sm h-101 w-[19.81rem] mb-6 mt-6">
+            <div className="card bg-base-100 shadow-sm h-full w-full max-w-[20rem] mb-6 mt-6 mx-auto">
                 <figure className="p-4 mt-4 hover-3d">
                     <img
                         src={image}
@@ -43,9 +43,9 @@ const App = ({ singleApp }) => {
                     <div></div>
                     <div></div>
                 </figure>
-                <div className="card-body font-medium items-center text-center">
+                <div className="card-body font-medium items-center text-center p-4">
                     <h2 className="text-[1.2rem]">{title}</h2>
-                    <section className='grid grid-cols-2 gap-35 text-[1rem]'>
+                    <section className='flex justify-between w-full px-2 text-[1rem]'>
                         <span className="bg-[#f1f5e8] text-[#00d390] badge rounded-sm w-[4.31rem] h-[1.94rem]">
                             <img className='h-4 w-4' src={downloadIcon} alt="" /> {convertDownload}
                         </span>

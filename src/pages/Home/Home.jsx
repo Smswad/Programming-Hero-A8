@@ -9,7 +9,7 @@ const Home = () => {
     const data = useLoaderData();
     // console.log(data);
     return (
-        <div className='bg-[#f5f5f5] flex flex-col items-center text-center inter-normal'>
+        <div className='bg-[#f5f5f5] flex flex-col items-center text-center inter-normal w-full overflow-x-hidden'>
             <Banner></Banner>
             <Facts></Facts>
             <Apps data={data}></Apps>
