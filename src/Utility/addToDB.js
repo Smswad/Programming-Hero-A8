@@ -13,7 +13,7 @@ const addInstalledApp = (id) => {
     const storedAppData = getInstalledApp();
     const numericId = Number(id);
     if (storedAppData.includes(numericId)) {
-        alert("This App is already Installed!");
+        // alert("This App is already Installed!");
         return;
     }
     // else {
@@ -34,7 +34,7 @@ const removeInstalledApp = (id) => {
 
     localStorage.setItem("installedList", JSON.stringify(updatedApps));
 
-    alert("App Uninstalled!");
+    // alert("App Uninstalled!");
 };
 
 
