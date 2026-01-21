@@ -11,17 +11,15 @@ const Navbar = () => {
 
 
     const links = <>
-        <ul className='flex space-x-8 inter-normal font-semibold text-[1rem]'>
-            <li><NavLink to='/' className={({ isActive }) =>
-                isActive ? "hover-gradient active-gradient" : "hover-gradient"
-            } href="">Home</NavLink></li>
-            <li><NavLink to='/apps' className={({ isActive }) =>
-                isActive ? "hover-gradient active-gradient" : "hover-gradient"
-            } href="">Apps</NavLink></li>
-            <li><NavLink to='/installation' className={({ isActive }) =>
-                isActive ? "hover-gradient active-gradient" : "hover-gradient"
-            } href="">Installation</NavLink></li>
-        </ul>
+        <li><NavLink to='/' className={({ isActive }) =>
+            isActive ? "hover-gradient active-gradient" : "hover-gradient"
+        } href="">Home</NavLink></li>
+        <li><NavLink to='/apps' className={({ isActive }) =>
+            isActive ? "hover-gradient active-gradient" : "hover-gradient"
+        } href="">Apps</NavLink></li>
+        <li><NavLink to='/installation' className={({ isActive }) =>
+            isActive ? "hover-gradient active-gradient" : "hover-gradient"
+        } href="">Installation</NavLink></li>
     </>
     return (
         <div>
@@ -37,7 +35,7 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex="-1"
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow flex-col gap-2 font-semibold text-[1rem]">
                             {links}
                         </ul>
                     </div>
@@ -47,11 +45,10 @@ const Navbar = () => {
                         <span className="font-bold text-[1rem] bg-[linear-gradient(125deg,#632EE3_0%,#9F62F2_100%)] bg-clip-text text-transparent"
                         >HERO.IO</span>
                     </Link>
-                    {/* Placeholder to balance the flex container on mobile if needed, or remove verify behavior */}
-                     <div className='lg:hidden w-6'></div>
+                    <div className='lg:hidden w-6'></div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-1 flex space-x-8 inter-normal font-semibold text-[1rem]">
                         {links}
                     </ul>
                 </div>
