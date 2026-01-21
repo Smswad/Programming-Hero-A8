@@ -10,6 +10,8 @@ import InstalledApplist from '../pages/InstalledApp/InstalledApplist';
 import Installation from '../pages/Installation/Installation';
 // import Apps from '../pages/App/Apps';
 import Allapps from '../pages/Allapps/Allapps';
+import LoadingAnimation from '../pages/LoadingAnimation/LoadingAnimation';
+import AppNotFound from '../pages/AppNotFound/AppNotFound';
 
 
 export const router = createBrowserRouter([
@@ -26,8 +28,24 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/appDetails/:id',
-                loader: () => fetch('/appData.json'),
-                Component: AppDetails
+                loader: async ({ params }) => {
+                    const res = await fetch('/appData.json');
+                    const data = await res.json();
+
+                    const appId = parseInt(params.id);
+                    const appExists = data.find(app => app.id === appId);
+
+                    if (!appExists) {
+                        throw new Response("App Not Found", {
+                            status: 404,
+                            statusText: "Invalid App ID"
+                        });
+                    }
+
+                    return data;
+                },
+                Component: AppDetails,
+                errorElement: <AppNotFound></AppNotFound>
             },
             {
                 path: '/ratingCharts/:id',
@@ -43,6 +61,11 @@ export const router = createBrowserRouter([
                 path: '/installation',
                 loader: () => fetch('/appData.json'),
                 Component: Installation
+            },
+            {
+                path: '/loading',
+                loader: () => fetch('/appData.json'),
+                Component: LoadingAnimation
             }
         ]
     },

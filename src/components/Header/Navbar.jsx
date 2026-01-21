@@ -2,12 +2,14 @@ import React from 'react';
 import logo from "../../assets/assets/logo.png"
 import "../../App.css"
 import { SiGithub } from 'react-icons/si';
-import { Link, NavLink } from 'react-router';
-import { House, LayoutGrid } from 'lucide-react';
-import { GrInstallOption } from 'react-icons/gr';
-
+import { Link, NavLink, useNavigation } from 'react-router';
+import LoadingAnimation from '../../pages/LoadingAnimation/LoadingAnimation';
 
 const Navbar = () => {
+    const navigation = useNavigation();
+    const isLoading = navigation.state === "loading";
+
+
     const links = <>
         <ul className='flex space-x-8 inter-normal font-semibold text-[1rem]'>
             <li><NavLink to='/' className={({ isActive }) =>
@@ -23,7 +25,8 @@ const Navbar = () => {
     </>
     return (
         <div>
-
+            {/* 🔵 Loading Bar */}
+            {isLoading && <LoadingAnimation></LoadingAnimation>}
             {/* <h1>This is Header Section</h1> */}
             <div className="navbar bg-base-100  mr-2 inter-normal">
                 <div className="navbar-start">

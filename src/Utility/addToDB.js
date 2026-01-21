@@ -22,7 +22,7 @@ const addInstalledApp = (id) => {
     //     const data = JSON.stringify(storedAppData);
     //     localStorage.setItem("installedList", data);
     // }
-        alert("The App in Installing!");
+    alert("The App in Installing!");
     localStorage.setItem("installedList", JSON.stringify([...storedAppData, numericId]));
 }
 // apps = storedAppData
@@ -34,7 +34,7 @@ const removeInstalledApp = (id) => {
 
     localStorage.setItem("installedList", JSON.stringify(updatedApps));
 
-    // alert("App Uninstalled!");
+    alert("App Uninstalled!");
 };
 
 

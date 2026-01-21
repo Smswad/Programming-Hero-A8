@@ -5,9 +5,8 @@ import ratingsIcon from "../../assets/assets/icon-ratings.png"
 import reviewsIcon from "../../assets/assets/icon-review.png"
 import { useLoaderData, useParams } from 'react-router';
 import Ratingcharts from '../RatingCharts/Ratingcharts';
-import ScrollToTop from '../ScrollToTop/ScrollToTop';
+// import ScrollToTop from '../ScrollToTop/ScrollToTop';
 import { addInstalledApp, getInstalledApp } from '../../Utility/addToDB';
-// import { router } from '../../Routes/routes';
 
 const AppDetails = () => {
 
@@ -30,10 +29,6 @@ const AppDetails = () => {
     }
     // Reviews Conversion 
     const convertReviews = (reviews / 1000).toFixed(1) + "K";
-
-    // const handleInstalledApp = id => {
-    //     addInstalledApp(id);
-    // }
 
     const [isInstalled, setIsInstalled] = useState(false);
 
