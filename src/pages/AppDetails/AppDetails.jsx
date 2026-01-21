@@ -5,11 +5,14 @@ import ratingsIcon from "../../assets/assets/icon-ratings.png"
 import reviewsIcon from "../../assets/assets/icon-review.png"
 import { useLoaderData, useParams } from 'react-router';
 import Ratingcharts from '../RatingCharts/Ratingcharts';
+// import Swal from 'sweetalert2'
+// import withReactContent from 'sweetalert2-react-content'
 // import ScrollToTop from '../ScrollToTop/ScrollToTop';
 import { addInstalledApp, getInstalledApp } from '../../Utility/addToDB';
+import { Bounce, ToastContainer, toast } from 'react-toastify';
 
+// const MySwal = withReactContent(Swal)
 const AppDetails = () => {
-
     const { id } = useParams();
     const AppId = parseInt(id);
     const data = useLoaderData();
@@ -38,6 +41,26 @@ const AppDetails = () => {
     }, [AppId]);
 
     const handleInstall = () => {
+
+        // Swal.fire({
+        //     title: "Good job!",
+        //     text: "The app is installed!",
+        //     icon: "success"
+        // });
+        // toast();
+        toast.success(`${title} is Installed!`, {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+        });
+
+
         addInstalledApp(AppId);
         setIsInstalled(true);
     };
@@ -47,6 +70,19 @@ const AppDetails = () => {
 
     return (
         <div className='px-4 lg:px-20 inter-normal max-w-7xl mx-auto'>
+            <ToastContainer
+                position="top-right"
+                autoClose={2000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover={false}
+                theme="light"
+                transition={Bounce}
+            />
             <div className='flex flex-col lg:flex-row items-center lg:items-start'>
                 <section className='mb-8 lg:mb-0 lg:mr-10'>
                     <img src={image} alt="" className="w-full max-w-[200px] lg:max-w-none mx-auto rounded-xl" />

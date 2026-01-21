@@ -3,16 +3,10 @@ import "../../App.css"
 import downloadIcon from "../../assets/assets/icon-downloads.png"
 import ratingsIcon from "../../assets/assets/icon-ratings.png"
 import "../../App.css"
-import { removeInstalledApp } from '../../Utility/addToDB';
+// import { removeInstalledApp } from '../../Utility/addToDB';
 
 const InstalledAppCard = ({ app, onRemove }) => {
     const { image, title, downloads, ratingAvg, size, id } = app;
-
-    // const handleUninstall = (id) => {
-    //     removeInstalledApp(id);
-    //     setInstalledApp(prev => prev.filter(app => app.id !== id));
-    // };
-
 
     // Downloads Conversion
     // 1000000 M  ; 1000000000 B
@@ -28,8 +22,6 @@ const InstalledAppCard = ({ app, onRemove }) => {
 
     return (
         <div className=''>
-
-
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 bg-[white] rounded-xl shadow-sm w-full max-w-[40rem] mx-auto mb-4">
                 <img
                     src={image}

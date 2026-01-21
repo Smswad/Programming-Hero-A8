@@ -1,7 +1,7 @@
 import React from 'react';
 import "../../App.css"
 import AppNotFoundImage from '../../assets/assets/App-Error.png'
-import { Link, useNavigate } from 'react-router';
+import { Link } from 'react-router';
 
 const AppNotFound = () => {
     // const navigate = useNavigate();

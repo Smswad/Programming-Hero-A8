@@ -23,6 +23,7 @@ This project is built using the following technologies:
 ### Libraries & Utilities
 - **[Recharts](https://recharts.org/)**: Redefined chart library built with React and D3
 - **[Axios](https://axios-http.com/)**: Promise based HTTP client for the browser and node.js
+- **[React Toastify](https://fkhadra.github.io/react-toastify/)**: React notifications made easy
 
 ## Features
 - **Responsive Design**: Fully optimized for Mobile, Tablet, and Desktop.

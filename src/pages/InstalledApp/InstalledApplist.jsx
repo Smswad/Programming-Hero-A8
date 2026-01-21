@@ -4,6 +4,7 @@ import { getInstalledApp, removeInstalledApp } from '../../Utility/addToDB';
 import App from '../App/App';
 import InstalledAppCard from '../InstalledAppCard/InstalledAppCard';
 import { IoMdArrowDropdown } from 'react-icons/io';
+import { Bounce, ToastContainer, toast } from 'react-toastify';
 
 const InstalledApplist = () => {
 
@@ -34,17 +35,38 @@ const InstalledApplist = () => {
         }
     }
     const handleRemove = (id) => {
-        removeInstalledApp(id);          // ❗ remove from localStorage
+        removeInstalledApp(id);  // ❗ remove from localStorage
+        const removedApp = installedApp.find(app => app.id === id);
         setInstalledApp(prev =>
             prev.filter(app => app.id !== id) // ❗ update UI
         );
+        toast.error(`${removedApp?.title} is Uninstalled!`, {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+        });
     };
-
-
-
-
     return (
         <div>
+            <ToastContainer
+                position="top-right"
+                autoClose={2000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover={false}
+                theme="light"
+                transition={Bounce}
+            />
             <div className="space-y-4 inter-normal py-10 md:py-20 bg-[#f5f5f5] min-h-screen">
                 <section className='text-center px-4'>
                     <h1 className='font-bold text-3xl md:text-[3rem]'>Your Installed Apps</h1>
