@@ -4,12 +4,10 @@ import AppNotFoundImage from '../../assets/assets/App-Error.png'
 import { Link } from 'react-router';
 
 const AppNotFound = () => {
-    // const navigate = useNavigate();
 
     const handleClick = () => {
         window.location.href = '/apps';
     };
-
 
     return (
         <div>

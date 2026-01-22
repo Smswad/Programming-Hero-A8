@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router';
 import { getInstalledApp, removeInstalledApp } from '../../Utility/addToDB';
-import App from '../App/App';
 import InstalledAppCard from '../InstalledAppCard/InstalledAppCard';
 import { IoMdArrowDropdown } from 'react-icons/io';
 import { Bounce, ToastContainer, toast } from 'react-toastify';
@@ -35,10 +34,10 @@ const InstalledApplist = () => {
         }
     }
     const handleRemove = (id) => {
-        removeInstalledApp(id);  // ❗ remove from localStorage
+        removeInstalledApp(id);
         const removedApp = installedApp.find(app => app.id === id);
         setInstalledApp(prev =>
-            prev.filter(app => app.id !== id) // ❗ update UI
+            prev.filter(app => app.id !== id) // update UI
         );
         toast.error(`${removedApp?.title} is Uninstalled!`, {
             position: "top-right",

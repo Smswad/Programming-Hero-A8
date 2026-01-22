@@ -1,6 +1,5 @@
 import React from 'react';
 import "../../App.css"
-
 import ErrorImage from '../../assets/assets/error-404.png'
 import { Link } from 'react-router';
 import Navbar from '../../components/Header/Navbar';

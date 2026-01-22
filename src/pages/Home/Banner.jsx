@@ -7,7 +7,6 @@ import { Link } from 'react-router';
 const Banner = () => {
     return (
         <div className=''>
-
             <h1 className='mt-10 md:mt-20 font-bold text-4xl md:text-[4.5rem] leading-tight px-4'>We Build <br />
                 <span
                     className='bg-[linear-gradient(125deg,#632EE3_0%,#9F62F2_100%)] bg-clip-text text-transparent'>Productive
@@ -27,7 +26,6 @@ const Banner = () => {
                     App Store
                 </Link>
             </div>
-
             <img className='mt-10' src={hero} alt="hero.png" />
         </div>
     );

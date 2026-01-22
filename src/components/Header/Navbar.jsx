@@ -23,9 +23,8 @@ const Navbar = () => {
     </>
     return (
         <div>
-            {/* 🔵 Loading Bar */}
+            {/* Loading Bar */}
             {isLoading && <LoadingAnimation></LoadingAnimation>}
-            {/* <h1>This is Header Section</h1> */}
             <div className="navbar bg-base-100 inter-normal px-4 lg:px-0">
                 <div className="navbar-start w-full lg:w-1/2 justify-between lg:justify-start">
                     <div className="dropdown">

@@ -1,5 +1,4 @@
 import React, { Suspense, useEffect, useMemo, useState } from 'react';
-import Apps from '../Home/Apps';
 import App from '../App/App';
 import "../../App.css"
 import { useLoaderData } from 'react-router';
@@ -18,8 +17,6 @@ const Allapps = () => {
             app.title.toLowerCase().includes(searchText.toLowerCase())
         );
     }, [data, searchText]);
-
-    // const [searchText, setSearchText] = useState("");
 
     useEffect(() => {
         if (searchText === "") return;

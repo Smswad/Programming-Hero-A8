@@ -4,8 +4,6 @@ import App from '../App/App';
 import { Link } from 'react-router';
 
 const Apps = ({ data }) => {
-
-
     return (
         // {/* Apps */}
         <div className='mt-10 md:mt-20 px-4 w-full max-w-7xl mx-auto'>
@@ -28,8 +26,6 @@ const Apps = ({ data }) => {
                     Show All
                 </Link>
             </button>
-
-
         </div >
 
     );

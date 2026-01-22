@@ -3,7 +3,6 @@ import "../../App.css"
 import downloadIcon from "../../assets/assets/icon-downloads.png"
 import ratingsIcon from "../../assets/assets/icon-ratings.png"
 import "../../App.css"
-// import { removeInstalledApp } from '../../Utility/addToDB';
 
 const InstalledAppCard = ({ app, onRemove }) => {
     const { image, title, downloads, ratingAvg, size, id } = app;
@@ -28,7 +27,6 @@ const InstalledAppCard = ({ app, onRemove }) => {
                     alt={title}
                     className="w-14 h-14 rounded-xl"
                 />
-
                 <div className="flex-2 w-full text-center sm:text-left">
                     <h3 className="font-semibold text-lg">{title}</h3>
                     <div className='flex justify-center sm:justify-start gap-4 max-w-full font-medium mt-1'>

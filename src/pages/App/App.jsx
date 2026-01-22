@@ -5,10 +5,7 @@ import ratingsIcon from "../../assets/assets/icon-ratings.png"
 import { Link } from 'react-router';
 const App = ({ singleApp }) => {
 
-    // console.log(singleApp);
-
     const { image, title, downloads, ratingAvg, id } = singleApp;
-
 
     // 1000000 M  ; 1000000000 B
     let millionconvertorNumber = 1000000;
@@ -16,11 +13,9 @@ const App = ({ singleApp }) => {
     let convertDownload = 0;
     if (downloads >= 1000000 && downloads < 1000000000) {
         convertDownload = (downloads / millionconvertorNumber) + 'M';
-        // return (convertDownload + 'M');
     }
     else if (downloads >= 1000000000) {
         convertDownload = (downloads / billionconvertorNumber) + 'B';
-        // return (convertDownload + 'B');
     }
 
     return (

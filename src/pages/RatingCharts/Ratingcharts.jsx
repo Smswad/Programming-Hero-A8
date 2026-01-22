@@ -8,7 +8,6 @@ const Ratingcharts = () => {
     const AppId = parseInt(id);
     const data = useLoaderData();
     const singleApp = data.find(app => app.id === AppId);
-    // console.log(singleApp);
     const { ratings } = singleApp;
     const reversedRatings = [...ratings].reverse();
 
@@ -20,7 +19,6 @@ const Ratingcharts = () => {
                         <h1 key={index}>
                         </h1>
                     ))
-
                 }
                 <div>
                     <ResponsiveContainer width="100%" height={354}>
